@@ -1,0 +1,25 @@
+{
+  "name": "airline_flightandsearchservice",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Sumituuu777/airline_FlightAndSearchService#readme",
+  "bugs": {
+    "url": "https://github.com/Sumituuu777/airline_FlightAndSearchService/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumituuu777/airline_FlightAndSearchService.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "mysql": "^2.18.1"
+  }
+}
