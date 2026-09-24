@@ -3,11 +3,11 @@ const { CityRepository} =require('../repository/index')
 class CityService{
 
     constructor(){
-        this.CityRepository=CityRepository;
+        this.cityRepository= new CityRepository();
     }
     async createCity(data){
         try {
-            const city=await this.CityRepository.createCity(data);
+            const city=await this.cityRepository.createCity(data);
             return city;
         } catch (error) {
             console.log("error in service layer");
@@ -16,7 +16,7 @@ class CityService{
     }
     async deleteCity(cityId){
         try {
-            await this.CityRepository.deleteCity(cityId)
+            await this.cityRepository.deleteCity(cityId)
             return true;
         } catch (error) {
             console.log("error in service layer");
@@ -25,7 +25,7 @@ class CityService{
     }
     async getCity(cityId){
         try {
-            const city=await this.CityRepository.getCity(cityId);
+            const city=await this.cityRepository.getCity(cityId);
             return city;
         } catch (error) {
             console.log("error in service layer");
@@ -34,7 +34,7 @@ class CityService{
     }
     async updateCity(data,cityId){
         try {
-            const city=await this.CityRepository.updateCity(cityId,data);
+            const city=await this.cityRepository.updateCity(cityId,data);
             return city;
         } catch (error) {
             console.log("error in service layer");
