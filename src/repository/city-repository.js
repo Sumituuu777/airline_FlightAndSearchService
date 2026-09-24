@@ -33,8 +33,8 @@ class CityRepository{
             throw {error}
         }
     }
-    async updateCity(cityId,data){
-        try {
+    async updateCity(cityId,data){ //data is a object containing only the keys:values which you 
+        try {                      // want to update ex {name:prayagraj}
             const city=await City.update(data,{
                 where:{
                     id:cityId
